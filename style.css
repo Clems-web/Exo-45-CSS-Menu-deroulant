@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: black;
+}
+
+#cadreparent {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+#cadreparent i {
+    display: none;
+}
+ol li, a {
+    font-size: 4rem;
+    color: blanchedalmond;
+    list-style-type: none;
+    border-radius: 1rem;
+    display: inline-block;
+    width: 16.6%;
+}
+
+.sousmenu a {
+    font-size: 2.5rem;
+    color: blanchedalmond;
+    list-style-type: none;
+    border-radius: 1rem;
+    display: none;
+    width: 20%;
+}
+a {
+    text-decoration: none;
+    margin-left: 25%;
+}
+#Menu {
+    background-color: darkgrey;
+}
+
+#Youtube {
+    background-color: red;
+}
+
+#Google {
+    background-color: lightsteelblue;
+}
+
+#GitHub {
+    background-color: black;
+}
+
+#Marmiton {
+    background-color: darkorange;
+}
+
+#Netflix {
+    background-color: darkred;
+}
+
+#Scantrad {
+    background-color: darkslategrey;
+}
+
+i {
+    font-size: 5rem;
+    color: blanchedalmond;
+    display: block;
+}
+@media screen and (max-width: 600px){
+    #cadreparent {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    #cadreparent i {
+        display: block;
+    }
+    a {
+        display: none;
+    }
+    nav:hover a, nav:hover li {
+        display: block;
+        width: 20%;
+        font-size: 3rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 351px) {
+    nav:hover a, nav:hover li {
+        display: block;
+        width: 20%;
+        font-size: 1.5rem;
+        margin-left: 10%;
+        padding: 0;
+    }
+    nav:hover i {
+        transform-origin: 0 0;
+        transform: rotate(90deg);
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav ol, ol a {
+        display: inline-block;
+        width: 100%;
+    }
+    .menu:hover .sousmenu, .menu:hover li, .menu:hover a {
+        display: inline-block;
+    }
+    .sousmenu:hover a {
+        display: inline-block;
+    }
+}
